@@ -1,0 +1,65 @@
+﻿@using LindseyTour.Models
+@{
+   Layout = "~/Views/Shared/_Layout.cshtml";
+   ViewBag.Title = "Index";
+   var experiment = (Experiment)ViewBag.experiment;
+}
+<script type="text/javascript">
+   @if(experiment != null){
+   @:if(window.cxApi){
+      if(experiment.Code != null && experiment.Code != ""){
+      @:cxApi.setChosenVariation(@experiment.Variation,"@experiment.Code");
+      }
+   @:}
+   }
+</script>
+<div class="content">
+	<div class="header-wrap">
+		<div class="container">
+			<img class="logo" src="/content/images/logo_tour.png" />
+
+			<div class="album-container">
+				<span>Pre-Order Lindsey’s New Album "Brave Enough" out 8/19 featuring "Something Wild" and "The Arena"</span>
+				<ul>
+					<li><a target="_blank" href="http://found.ee/TheArenaSpotify"><i class="fa fa-spotify"></i></a></li>
+					<li><a target="_blank" href="http://found.ee/BEAmazonCD"><i class="fa fa-amazon"></i></a></li>
+					<li><a target="_blank" href="http://found.ee/beapplemusic"><i class="fa fa-apple"></i></a></li>
+					<li><a target="_blank" href="http://found.ee/BEiTunes"><i class="fa fa-apple_music"></i></a></li>
+					<li class="btn"><a target="_blank" href="http://found.ee/lindseystirlingmerch" class="button">Store</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+   <div class="store-wrap">
+      <div class="container dates-container">
+         <table class="event-listings--table">
+            <tr class="listing-event bordered-bottom">
+               <td class="listing-date-block date-block listing-cell text-center" >
+                  <div class="listing-date--desktop">
+                     <span class="date-block__seg date-block__seg--month">Oct</span>
+                     <span class="date-block__seg date-block__seg--day">03</span>
+                     <span class="date-block__seg date-block__seg--year">2016</span>
+                  </div>
+               </td>
+               <td class="listing-location-details listing-cell">
+                  <h3 class="listing-venue header">Warner Theatre</h3>
+                  <p class="listing-location">
+                     <span class="listing-location__city">Erie</span>
+                     <span class="listing-location__region">, PA</span>
+                     <span class="listing-location__country">, United States</span>
+                  </p>
+               </td>
+               <td class="btn-container listing-cell btn--2">
+                  @if(experiment.Variation == 0){
+                  <a href="/thankyou" class="button">Buy Tickets</a>
+                  }else{
+                  <a href="/thankyou" class="button">Buy Now!</a>                     
+                  }
+               </td>
+            </tr>
+         </table>
+      </div>
+   </div>
+</div>
+

@@ -1,0 +1,375 @@
+@font-face {
+	font-family: 'Uni Sans';
+	src: url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansLight.eot');
+	src: url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansLight.woff2') format('woff2'),
+		 url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansLight.woff') format('woff'),
+		 url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansLight.ttf') format('truetype'),
+		 url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansLight.svg#UniSansLight') format('svg'),
+		 url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansLight.eot?#iefix') format('embedded-opentype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Uni Sans';
+	src: url('//assets.crowdsurge.com/fonts/lindseystirling/UniSans.eot');
+	src: url('//assets.crowdsurge.com/fonts/lindseystirling/UniSans.woff2') format('woff2'),
+		 url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansRegular.woff') format('woff'),
+		 url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansRegular.ttf') format('truetype'),
+		 url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansRegular.svg#UniSansRegular') format('svg'),
+		 url('//assets.crowdsurge.com/fonts/lindseystirling/UniSans.eot?#iefix') format('embedded-opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Uni Sans';
+	src: url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansBold.eot');
+	src: url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansBold.woff2') format('woff2'),
+		 url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansBold.woff') format('woff'),
+		 url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansBold.ttf') format('truetype'),
+		 url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansBold.svg#UniSansBold') format('svg'),
+		 url('//assets.crowdsurge.com/fonts/lindseystirling/UniSansBold.eot?#iefix') format('embedded-opentype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: 'Uni Sans', sans-serif;
+	background-color: #22171B;
+	font-weight: 400;
+}
+
+.content {
+	background: url(/content/images/splashBG2.jpg);
+	background-repeat: no-repeat;
+	background-position: 51% -20px;
+}
+
+a {
+	-webkit-transition: background-color .5s ease,color .5s ease,border-color .5s ease,opacity .5s ease;
+	transition: background-color .5s ease,color .5s ease,border-color .5s ease,opacity .5s ease;
+}
+.topBar .container:after,
+.header-wrap .container:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.header-wrap {
+	padding-top: 50px;
+}
+.header-wrap .container {
+	width: 100%;
+	max-width: 1020px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.header-wrap .logo {
+	margin: auto;
+	display: block;
+	max-width: 100%;
+}
+.dc-container,
+.album-container {
+	text-align: center;
+	margin: 150px 0px;
+	position: relative;
+	float: left;
+	width: 28%;
+}
+/*.dc-container {
+	margin-top: 115px;
+}
+*/.dc-container.mobile {
+	display: none;
+}
+.album-container {
+	float: right;
+	width: 30%;
+	min-width: 257px;
+}
+.album-container ul {
+	padding: 0;
+	margin: 0;
+}
+.album-container li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0px 3px;
+	vertical-align: middle;
+}
+.album-container li:last-of-type {
+	margin-right: 0;
+}
+.album-container li:first-of-type {
+	margin-left: 0;
+}
+.album-container li:not(.btn) {
+	line-height: 33px;
+	position: relative;
+	top: 4px;
+}
+.album-container li:not(.btn) a {
+	display: block;
+	font-size: 33px;
+	height: 100%;
+	width: 100%;
+	color: #C0827E;
+}
+.album-container li:not(.btn) a:hover {
+	opacity: .75;
+}
+.fa {
+	position: relative;
+}
+.fa-spotify {
+	top: -2px;
+}
+.fa-apple {
+	top: -5px;
+}
+i.fa.fa-apple_music:before {
+	content: "";
+	height: 33px;
+	width: 33px;
+	background: url(//assets.crowdsurge.com/store/lindseystirling/icon_appleMusic.png);
+	display: block;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.dc-container span,
+.album-container span {
+	display: block;
+	font-size: 18px;
+	line-height: 1.1;
+	margin-bottom: 14px;
+}
+.dc-container .button,
+.dates-container .button,
+.album-container .button {
+	background: #C0827E;
+	color: #fff;
+	border: 1px solid #AC7571;
+	border-radius: 6px;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 14px;
+	text-decoration: none;
+	-webkit-box-shadow: inset 0px 2px 0px 0px #CC9B97;
+	-moz-box-shadow: inset 0px 2px 0px 0px #CC9B97;
+	box-shadow: inset 0px 2px 0px 0px #CC9B97;
+}
+.dc-container .button:hover,
+.album-container .button:hover {
+	background: #AC7571;
+	border-color: #996864;
+	-webkit-box-shadow: inset 0px 2px 0px 0px rgba(204,155,151,.75);
+	-moz-box-shadow: inset 0px 2px 0px 0px rgba(204,155,151,.75);
+	box-shadow: inset 0px 2px 0px 0px rgba(204,155,151,.75);
+}
+
+.dc-container .contestCTA {
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.contestCTA .squiggle {
+	font-family: 'Galada', cursive;
+	margin: 3px 0;
+	text-transform: lowercase;
+	font-style: italic;
+	position: relative;
+}
+.contestCTA .squiggle:before,
+.contestCTA .squiggle:after {
+	content: "";
+	height: 1px;
+	background: #fff;
+	width: 35%;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 6%;
+}
+.contestCTA .squiggle:after {
+	left: auto;
+	right: 6%;
+}
+
+
+.store-wrap .container {
+	width: 100%;
+	max-width: 1020px;
+	margin: 0 auto 30px;
+	padding: 30px 15px 0;
+}
+
+
+.topBar {
+	position: absolute;
+	top: 0px;
+	background: rgba(192,130,126,.5);
+	border-bottom: 1px solid rgba(172,117,113,.75);
+	overflow: auto;
+	vertical-align: top;
+	padding: 15px 0px;
+	width: 100%;
+	text-transform: uppercase;
+	z-index: 1001;
+}
+.topBar .container {
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.social {
+	float: left;
+}
+.social ul {
+	margin: 0;
+	padding: 0;
+}
+.social li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0px 5px;
+	line-height: 31px;
+	vertical-align: top;
+}
+.social a {
+	display: block;
+	font-size: 24px;
+	height: 100%;
+	width: 100%;
+	color: #fff;
+}
+.social .title {
+	position: relative;
+	top: 2px;
+	margin: 0;
+}
+.continue {
+	text-decoration: none;
+	color: #fff;
+	float: right;
+	line-height: 31px;
+	position: relative;
+	top: 2px;
+}
+.continue:hover, .social a:hover {
+	opacity:0.8;
+}
+
+
+.modal-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: rgba(34,23,27,.6);
+	z-index: 40;
+	display:none;
+}
+.blur {
+	filter: url(//assets.crowdsurge.com/store/lindseystirling/blur.svg#blur);
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+}
+.data-container {
+	width: 100%;
+	max-width: 440px;
+	margin: auto;
+	margin-top: 80px;
+	background: transparent;
+	padding: 2%;
+	z-index: 1000;
+	margin-bottom: 30px;
+	position: relative;
+	padding-bottom: 0px;
+	text-align: center;
+}
+#modal-close {
+	margin: 10px;
+	display: inline-block;
+	font-size: 26px;
+	margin-top: 0px;
+	color:#fff;
+}
+#modal-close:hover {
+	opacity:0.8;
+	cursor:pointer;
+}
+
+@media only screen and (max-width: 810px) {
+	.dc-container, .album-container {
+		width: 35%;
+	}
+}
+
+@media only screen and (max-width: 710px) {
+	.content {
+		background-position: 51% 0px;
+		background-size: 350px
+	}
+	.dc-container, .album-container {
+		width: 43%;
+		margin-top: 175px;
+		margin-bottom: 0px;
+	}
+	.header-wrap {
+		padding-top: 82px;
+	}
+}
+
+@media only screen and (max-width: 510px) {
+	.content {
+		background-position: 51% 10px;
+		background-size: 310px;
+	}
+	.topBar {
+		padding: 10px 0;
+		text-align: center;
+	}
+	.social, .continue {
+		float: none;
+	}
+	.header-wrap {
+		padding-top: 30px;
+	}
+	.dc-container, .album-container {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.album-container {
+		margin-top: 310px;
+	}
+	.dc-container.mobile {
+		display: block;
+		border-top: 1px solid rgba(192,130,126,.5);
+		margin: 25px auto 0;
+		padding: 20px 25px 10px;
+	}
+	.dc-container.desktop {
+		display: none;
+	}
+	.store-wrap .container {
+		padding-top: 10px;
+	}
+}

@@ -1,0 +1,73 @@
+﻿.event-listings--table {
+   display: table;
+   width: 100%;
+   vertical-align: middle;
+}
+
+.listing-event {
+   padding-left:15px;
+   padding-right: 15px
+}
+
+.listing-cell {
+   padding-top: 10px;
+   padding-bottom: 10px
+}
+
+.btn-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap
+}
+
+.date-block {
+    vertical-align: middle;
+    line-height: 1.1;
+    display: table-cell;
+    padding-right: 15px
+}
+
+td.listing-date-block {
+    overflow: hidden
+}
+
+.listing-date--desktop {
+    min-width: 95px;
+    background: rgba(205,149,144,.25);
+    color: #cd9590;
+    margin: -70px 0 -70px -15px;
+    padding: 75px 0
+}
+
+.listing-date--desktop .date-block__seg {
+    display: block;
+    text-transform: uppercase;
+    white-space: nowrap
+}
+
+.listing-date--desktop .date-block__seg--day {
+    font-size: 30px
+}
+
+.listing-venue {
+   padding-right:15px
+}
+
+.header {
+   margin:0;
+   font-size: 24px;
+   color: #cd9590;
+}
+
+.listing-location {
+   margin:0;
+}
+
+.text-center {
+    text-align: center
+}
+
+.btn--1,.btn--2 {
+    max-width: 200px
+}
